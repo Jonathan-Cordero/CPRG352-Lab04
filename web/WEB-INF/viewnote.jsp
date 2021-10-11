@@ -10,10 +10,10 @@
         <h1>Simple Note Keeper</h1>
         <h2>View Note</h2>
         <label>Title:</label>
-        <p name="title">${note.getTitle()}</p>
+        <p>${note.title}</p>
         <br>
         <label>Content:</label>
-        <p name="content">${note.getContent()}</p>
+        <p>${note.content}</p>
         <a href="note?edit">Edit</a>
         <%-- <c:import url="editnote.jsp" /> --%>
     </body>

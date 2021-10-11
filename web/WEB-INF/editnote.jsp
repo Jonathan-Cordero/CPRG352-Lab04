@@ -11,10 +11,10 @@
         <h2>Edit Note</h2>
         <form method="POST" action="note">
         <label for="title">Title:</label>
-        <input type="text" id="title" value="${note.setTitle()}">
+        <input type="text"  name="edit_title" value="${page_post.title}">
         <br>
         <label for="content">Content:</label>
-        <textarea id="content" name="content" rows="4" cols="20">${note.setContent()}</textarea>
+        <textarea  name="edit_content" rows="4" cols="20">${page_post.content}</textarea>
         <input type="Submit" value="Submit">
         </form>
     </body>
