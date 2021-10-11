@@ -9,15 +9,12 @@
     <body>
         <h1>Simple Note Keeper</h1>
         <h2>View Note</h2>
-        <label for="title">Title:</label>
-        <p>${note.getTitle()}</p>
+        <label>Title:</label>
+        <p name="title">${note.getTitle()}</p>
         <br>
-        <label for="content">Content:</label>
-        <p>${note.getContent()}</p>
+        <label>Content:</label>
+        <p name="content">${note.getContent()}</p>
         <a href="note?edit">Edit</a>
         <%-- <c:import url="editnote.jsp" /> --%>
-        <form method="POST" action="note">
-             <button type="submit">test</button>
-        </form>
     </body>
 </html>

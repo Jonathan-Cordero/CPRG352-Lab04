@@ -9,10 +9,13 @@
     <body>
         <h1>Simple Note Keeper</h1>
         <h2>Edit Note</h2>
+        <form method="POST" action="note">
         <label for="title">Title:</label>
-        <input type="text" id="title" name="title">
+        <input type="text" id="title" value="${note.setTitle()}">
         <br>
         <label for="content">Content:</label>
-        <textarea id="content" name="content" rows="4" cols="20"></textarea>
+        <textarea id="content" name="content" rows="4" cols="20">${note.setContent()}</textarea>
+        <input type="Submit" value="Submit">
+        </form>
     </body>
 </html>
